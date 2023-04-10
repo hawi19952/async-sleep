@@ -1,0 +1,22 @@
+{
+  "name": "async-sleep",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "start": "node ./dist/app.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hawi19952/async-sleep.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hawi19952/async-sleep/issues"
+  },
+  "homepage": "https://github.com/hawi19952/async-sleep#readme"
+}
