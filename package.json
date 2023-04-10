@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/hawi19952/async-sleep/issues"
   },
-  "homepage": "https://github.com/hawi19952/async-sleep#readme"
+  "homepage": "https://github.com/hawi19952/async-sleep#readme",
+  "dependencies": {
+    "jest": "^29.5.0"
+  }
 }
