@@ -1,4 +1,4 @@
-import { ExchangeStats, handleStats } from "../src/get.stats";
+import { ExchangeStats, decideOnConsumer } from "../src/get.stats";
 
 const noConsumerStats: ExchangeStats = {
   consumersCount:0,
@@ -44,19 +44,19 @@ describe('Program Workflow', () => {
 
     describe('Decision over instance', () => {
       it('should kill instance if message count is 0 after a timeout of 30 seconds', () => {
-        const newStats = handleStats(noMessagesStats);
+        const newStats = decideOnConsumer(noMessagesStats);
         expect(newStats.consumersCount).toBe(0);
       });
 
       it('should initiate instance and consumer if there is a message and no consumers available', () => {
-        const newStats = handleStats(noConsumerStats);
+        const newStats = decideOnConsumer(noConsumerStats);
 
         expect(newStats.consumersCount).toBeGreaterThan(0);
       });
 
       it('should Do nothing when consumer and messages exist', () => {
         const currentStats = existsMessagesAndConsumerStats;
-        const newStats = handleStats(currentStats);
+        const newStats = decideOnConsumer(currentStats);
         expect(newStats).toBe(currentStats);
       });
     });

@@ -24,7 +24,7 @@ const initConsumer = (exchange: ExchangeStats) => {
   return newStats;
 }
 
-export const handleStats = (stats: ExchangeStats) => {
+export const decideOnConsumer = (stats: ExchangeStats) => {
   let newStats = stats;
   const {consumersCount, messagesCount} = stats
 
