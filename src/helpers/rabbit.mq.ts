@@ -1,6 +1,6 @@
 import amqp, { Channel } from 'amqplib'
 
-const RABBTITMQ_URI = 'amqp://user:password@localhost:5672';
+const RABBTITMQ_URI = 'amqp://user:password@3.213.4.207:5672';
 
 
 async function getQueueChannel (queueName: string) : Promise<Channel | undefined> {
