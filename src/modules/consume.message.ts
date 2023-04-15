@@ -7,7 +7,10 @@ function consumeMessages(channel: Channel) {
       const messageString = msg.content.toString();
       const message = JSON.parse(messageString);
       console.log(message);
-      channel.ack(msg);
+      setTimeout(() => {
+        channel.ack(msg);
+      }, 15000);
+      
     }
   }
 }
