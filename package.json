@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsc --watch",
-    "start": "node ./dist/src/index.js"
+    "start": "node --inspect --loader ./loader.js --enable-source-maps dist/server.js"
   },
   "devDependencies": {
     "@types/amqplib": "^0.10.1",

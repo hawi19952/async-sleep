@@ -1,5 +1,5 @@
-import getQueueChannel from "../exchange/rabbit.mq";
-import consumeMessages from "../modules/consume.message";
+import getQueueChannel from "@helpers/rabbit.mq.js";
+import consumeMessages from "@modules/consume.message.js";
 
 const QUEUE_NAME = 'requests';
 

@@ -1,0 +1,9 @@
+{
+  "paths": {
+    "@config": "dist/config",
+    "@helpers": "dist/helpers",
+    "@modules": "dist/modules",
+    "@test": "dist/test",
+    "@initialize": "dist/test"
+  }
+}

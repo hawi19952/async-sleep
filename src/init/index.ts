@@ -1,4 +1,4 @@
-import initMessagesConsumer from "./init.consumer";
+import initMessagesConsumer from "./init.consumer.js";
 
 export default function () {
   initMessagesConsumer();
